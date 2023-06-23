@@ -4,7 +4,7 @@
 // add your promises to the array `promises`
 window.promises = [];
 //your JS code here. If required.
-promises=["i Love u","I hate u","I belive you","sold","pick"]
+promises=["i Love u","I hate u","I belive you","sold"]
 const divElement=document.getElementById("output")
 
 for(let x in promises){
