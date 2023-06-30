@@ -16,6 +16,8 @@
 
     
 // }
+const divElement=document.getElementById("output")
+
 
 setTimeout(()=>{
     divElement.innerText="this first promise"
