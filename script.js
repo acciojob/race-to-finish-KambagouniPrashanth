@@ -1,3 +1,4 @@
+window.promises=[]
 let a=new Promise((resolve,reject)=>{
         setTimeout(()=>{
             resolve("a")
@@ -25,7 +26,12 @@ let e=new Promise((resolve,reject)=>{
             resolve("e")
         },2000)
     })
-    let x=Promise.any([a,b,c,d,e])
+promises.push(a);
+promises.push(b);
+promises.push(c);
+promises.push(d);
+promises.push(e);
+    let x=Promise.any(promises)
     // setTimeout(()=>{
     //     console.log(x)
     
